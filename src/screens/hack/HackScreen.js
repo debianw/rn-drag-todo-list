@@ -66,6 +66,7 @@ const HackScreen = () => {
               newData.map(item => item.id)
             )
           }}
+          ListEmptyComponent={<View><Text style={{ fontWeight: 'bold', textAlign: 'center' }}>Empty List</Text></View>}
           keyExtractor={(item) => item.id}
         />
       </View>
