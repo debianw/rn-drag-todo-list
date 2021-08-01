@@ -1,4 +1,4 @@
-const api = 'https://memory-todo-api.herokuapp.com';
+const api = 'http://localhost:3004';
 
 export const getTasks = async () => {
   const response = await fetch(`${api}/tasks`);

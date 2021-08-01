@@ -17,6 +17,7 @@ const HackScreen = () => {
   const [cacheData, setCacheData] = React.useState([]);
 
   React.useMemo(() => {
+    console.log('tasks changed => ', tasks);
     setCacheData(tasks);
   }, [tasks]);
 
